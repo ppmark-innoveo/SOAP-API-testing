@@ -9,6 +9,11 @@
     <Definition Filename="Definitions\Modelselectorcomponent\HorizontalProductSelectorComponent.zip" />
     <Definition Filename="Definitions\Modelselectorcomponent\VerticalProductSelectorComponent.zip" />
     <Definition Filename="Definitions\Process\SOAP10Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP11Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP12Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP13Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP14Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP15Process.zip" />
     <Definition Filename="Definitions\Process\SOAP1Process.zip" />
     <Definition Filename="Definitions\Process\SOAP2Process.zip" />
     <Definition Filename="Definitions\Process\SOAP3Process.zip" />
@@ -21,6 +26,11 @@
     <Definition Filename="Definitions\Productcategorization\ProductCategorization.zip" />
     <Definition Filename="Definitions\Product\SOAP1.zip" />
     <Definition Filename="Definitions\Product\SOAP10.zip" />
+    <Definition Filename="Definitions\Product\SOAP11.zip" />
+    <Definition Filename="Definitions\Product\SOAP12.zip" />
+    <Definition Filename="Definitions\Product\SOAP13.zip" />
+    <Definition Filename="Definitions\Product\SOAP14.zip" />
+    <Definition Filename="Definitions\Product\SOAP15.zip" />
     <Definition Filename="Definitions\Product\SOAP2.zip" />
     <Definition Filename="Definitions\Product\SOAP3.zip" />
     <Definition Filename="Definitions\Product\SOAP4.zip" />
