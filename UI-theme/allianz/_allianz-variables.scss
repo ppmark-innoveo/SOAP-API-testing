@@ -1,0 +1,44 @@
+:root{
+    --vd-green-color: var(--allianz-blue-color);
+    --vd-green-passive-color: #00572b;
+    --vd-green-light-color: #00c238;
+    --vd-green-button-color: var(--allianz-white-color);
+    --vd-green-dark-color: var(--allianz-white-color);
+    --light-grey-color: #f6f5f1;
+    --dark-gray: #d0d0d0;
+
+    --allianz-blue-color: #002F87;
+    --allianz-white-color: #fff;
+
+    --primary-font-color: var(--allianz-white-color);
+    --brand-primary-color: var(--vd-green-color);
+    --brand-primary-passive-color: var(--vd-green-passive-color);
+    --brand-primary-lighter-color: --vd-green-light-color;
+
+    --login-bg-color: var(--allianz-blue-color);
+
+    --toolbar-public-bg-color: var(--vd-green-color);
+
+    --nav-bg-color: var(--allianz-blue-color);
+    --nav-item-border-color: var(--vd-green-color);
+    --nav-item-hovered-bg-color: var(--brand-primary-passive-color);
+    --nav-item-selected-bg-color: var(--vd-green-passive-color);
+
+    --progress-bar-bg-color: transparent;
+    --progress-bar-step-font-color: var(--dark-gray);
+    --progress-bar-step-completed-font-color: var(--brand-primary-color);
+    --progress-bar-step-active-font-color: var(--brand-primary-color);
+
+    --input-border-width: 1px;
+    --attr-min-height: 36px;
+
+    --option-button-selected-bg-color: var(--allianz-white-color);
+    --option-button-border-color: var(--allianz-white-color);
+    --option-button-focused-border-color: var(--allianz-white-color);
+    --option-button-selected-border-color: var(--allianz-white-color);
+    --option-button-font-color: var(--allianz-white-color);
+
+    --slider-bar-handle-bg-color: var(--allianz-white-color);
+
+
+}

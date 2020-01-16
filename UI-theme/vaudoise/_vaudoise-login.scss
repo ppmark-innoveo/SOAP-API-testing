@@ -1,0 +1,30 @@
+.sk-login, .sk-standalone{
+    border: 0;
+
+    .sk-progress-bar{
+        display: none;
+    }
+
+    .sk-attr {
+        .sk-input {
+            border: 1px solid var(--reverse-color);
+        }
+
+        &.sk-attr--error{
+            .sk-input {
+                border: 1px solid var(--reverse-color) !important;
+            }
+        }
+    }
+
+    .sk-navigation .sk-button{
+        background-color: var(--reverse-color);
+
+        span{
+            color: var(--vd-green-color);
+        }
+    }
+}
+html[data-page="login"] body, html[data-page="standalone"] body{
+    background-position: 10% 50%;
+}

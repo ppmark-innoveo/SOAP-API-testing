@@ -1,0 +1,108 @@
+/******************************************************************************************* PROGRESS BAR */
+/**********************************************************************************************************/
+.sk-progress-bar {
+    min-height: auto;
+    padding: 0 20px;
+
+    &.sk-progress-bar--fixed{
+        background-color: #FFF;
+    }
+
+    .sk-progress-bar-step {
+        flex-direction: column;
+        padding: 20px 0 25px 0;
+        background-color: transparent;
+        text-align: center;
+
+        &:before {
+            position: absolute;
+            bottom: 9px;
+            left: 0;
+            content: '';
+            width: calc(50% - 10px);
+            height: 2px;
+            background: var(--dark-gray);
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 9px;
+            right: 0;
+            content: '';
+            width: calc(50% - 10px);
+            height: 2px;
+            background: var(--dark-gray);
+        }
+
+        &.sk-step--completed,
+        &.sk-step--active {
+            background-color: transparent;
+            text-align: center;
+
+            .sk-header:after {
+                color: var(--brand-primary-color);
+                content: "\f192";
+                left: calc(50% - 10px);
+                font-size: 1.9rem;
+            }
+        }
+
+        &.sk-step--active{
+            &:before {
+                background: var(--brand-primary-color);
+            }
+
+            .sk-title {
+                font-size: 1.7rem;
+                font-weight: 600;
+            }
+
+        }
+
+        &.sk-step--completed{
+            &:before {
+                background: var(--brand-primary-color);
+            }
+
+            &:after {
+                background: var(--brand-primary-color);
+            }
+        }
+
+        &.sk-step--active.sk-step--completed:after {
+            background: var(--dark-gray);
+        }
+
+        &:first-child:before {
+            display: none;
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+
+        .sk-header{
+            padding-left: 0;
+
+            &:after {
+                position: absolute;
+                bottom: 18px;
+                height: 2px;
+                color: var(--dark-gray);
+                font-family: 'Font Awesome 5 Pro';
+                content: "\f111";
+                left: calc(50% - 5px);
+                font-size: 1.2rem;
+            }
+        }
+
+        .sk-number {
+            display: none !important;
+        }
+
+        .sk-header--not-subtitled .sk-title {
+            font-style: normal;
+        }
+
+    }
+}

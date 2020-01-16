@@ -1,0 +1,54 @@
+.sk--priv{
+    .sk-nav{
+        .sk-nav-submenu-icon{
+            display: none;
+        }
+
+        .sk-nav-logo .sk-logo2{
+            padding: 5px;
+        }
+    }
+
+    header{
+        display: none;
+    }
+
+    .footer h4{
+        color: #e6e6e6;
+    }
+
+    .sk-comp{
+        background-color: rgba(255,255,255, .7);
+    }
+}
+
+.sk--pub{
+    .sk-toolbar{
+        display: none;
+    }
+
+    .sk-nav-logo{
+        margin: 0 auto;
+        padding: 10px;
+
+        img{
+            max-height: 80px;
+        }
+    }
+
+    .sk-comp{
+        background-color: transparent;
+    }
+}
+
+body.sk--resp .sk-main{
+    background-image: url("/resources/definition/generic/Resource/en/us/vaudoise_watermark.png");
+    background-repeat: no-repeat;
+    background-position: 105% 100%;
+    background-size: 50%;
+}
+
+.sk-autosearch .sk-columns-selector{
+    margin-top: -55px;
+    margin-right: 10px;
+}

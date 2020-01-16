@@ -1,0 +1,38 @@
+:root{
+    --brand-color: #ff6600;
+    --brand-passive-color: #924900;
+    --brand-bg-color: #333;
+    --brand-light-color: rgba(255, 102, 0, 0.62);
+    --brand-button-color: #ff6600;
+    --brand-dark-color: #501e00;
+    --light-grey-color: #f6f5f1;
+    --dark-gray: #d0d0d0;
+
+    --brand-primary-color: var(--brand-color);
+    --brand-primary-passive-color: var(--brand-passive-color);
+    --brand-primary-lighter-color: --brand-light-color;
+
+    --login-bg-color: rgba(0, 151, 64, 0.84);
+
+    --toolbar-public-bg-color: var(--brand-color);
+
+    --nav-public-bg-color: var(--brand-bg-color);
+    --nav-bg-color: var(--brand-bg-color);
+    --nav-item-border-color: var(--brand-bg-color);
+    --nav-item-hovered-bg-color: var(--brand-passive-color);
+    --nav-item-selected-bg-color: var(--brand-color);
+
+    --progress-bar-bg-color: transparent;
+    --progress-bar-step-font-color: var(--dark-gray);
+    --progress-bar-step-completed-font-color: var(--brand-color);
+    --progress-bar-step-active-font-color: var(--brand-color);
+
+    --input-border-width: 1px;
+    --attr-min-height: 36px;
+
+    --option-button-selected-bg-color: var(--brand-color);
+    --option-button-border-color: var(--brand-color);
+    --option-button-focused-border-color: var(--brand-color);
+    --option-button-selected-border-color: var(--brand-color);
+
+}

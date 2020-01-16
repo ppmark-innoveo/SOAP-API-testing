@@ -1,0 +1,620 @@
+@charset "UTF-8";
+:root {
+  --vd-green-color: var(--allianz-blue-color);
+  --vd-green-passive-color: #00572b;
+  --vd-green-light-color: #00c238;
+  --vd-green-button-color: var(--allianz-white-color);
+  --vd-green-dark-color: var(--allianz-white-color);
+  --light-grey-color: #f6f5f1;
+  --dark-gray: #d0d0d0;
+  --allianz-blue-color: #002F87;
+  --allianz-white-color: #fff;
+  --primary-font-color: var(--allianz-white-color);
+  --brand-primary-color: var(--vd-green-color);
+  --brand-primary-passive-color: var(--vd-green-passive-color);
+  --brand-primary-lighter-color: --vd-green-light-color;
+  --login-bg-color: var(--allianz-blue-color);
+  --toolbar-public-bg-color: var(--vd-green-color);
+  --nav-bg-color: var(--allianz-blue-color);
+  --nav-item-border-color: var(--vd-green-color);
+  --nav-item-hovered-bg-color: var(--brand-primary-passive-color);
+  --nav-item-selected-bg-color: var(--vd-green-passive-color);
+  --progress-bar-bg-color: transparent;
+  --progress-bar-step-font-color: var(--dark-gray);
+  --progress-bar-step-completed-font-color: var(--brand-primary-color);
+  --progress-bar-step-active-font-color: var(--brand-primary-color);
+  --input-border-width: 1px;
+  --attr-min-height: 36px;
+  --option-button-selected-bg-color: var(--allianz-white-color);
+  --option-button-border-color: var(--allianz-white-color);
+  --option-button-focused-border-color: var(--allianz-white-color);
+  --option-button-selected-border-color: var(--allianz-white-color);
+  --option-button-font-color: var(--allianz-white-color);
+  --slider-bar-handle-bg-color: var(--allianz-white-color);
+}
+
+.sk-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sk-stack > div {
+  width: 50%;
+  padding: 25px;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid var(--brand-primary-color);
+}
+
+.sk--priv .sk-nav .sk-nav-submenu-icon {
+  display: none;
+}
+
+.sk--priv .sk-nav .sk-nav-logo .sk-logo2 {
+  padding: 5px;
+}
+
+.sk--priv header {
+  display: none;
+}
+
+.sk--priv .footer h4 {
+  color: #e6e6e6;
+}
+
+.sk--priv .sk-comp {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.sk--pub .sk-toolbar {
+  display: none;
+}
+
+.sk--pub .sk-nav-logo {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.sk--pub .sk-nav-logo img {
+  max-height: 80px;
+}
+
+.sk--pub .sk-comp {
+  background-color: transparent;
+}
+
+body.sk--resp .sk-main {
+  background-image: url("/resources/definition/generic/Resource/en/us/vaudoise_watermark.png");
+  background-repeat: no-repeat;
+  background-position: 105% 100%;
+  background-size: 50%;
+}
+
+.sk-autosearch .sk-columns-selector {
+  margin-top: -55px;
+  margin-right: 10px;
+}
+
+.sk-attr .sk-field .sk-input {
+  padding-left: 10px;
+  border-radius: 2px;
+}
+
+.sk-attr .sk-field .sk-input-icon {
+  top: 9px;
+  left: 8px;
+}
+
+.sk-attr .sk-field .sk-input-icon.sk-resource-download {
+  left: 28px;
+}
+
+.sk-attr .sk-field .sk-input-icon.sk-resource-delete {
+  left: 52px;
+}
+
+.sk-attr.sk-attr--loading > .sk-field:before {
+  top: 8px;
+  right: 8px;
+}
+
+.sk-attr .sk-selection-table-table table {
+  background: rgba(245, 245, 245, 0.51);
+}
+
+.sk-attr .sk-selection-table-table table th, .sk-attr .sk-selection-table-table table td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sk-attr .sk-selection-table-table table thead th.cell--header button {
+  background-color: var(--brand-primary-color);
+  border: 0;
+  color: #FFF;
+  padding: 10px 25px;
+}
+
+.sk-attr .sk-selection-table-table .sk-selection-table-attr .sk-attr .sk-field {
+  min-height: 0;
+}
+
+.sk-attr .sk-selection-table-table .sk-selection-table-attr .sk-attr .sk-field input[type="checkbox"] + label:before {
+  content: "\f111";
+}
+
+.sk-attr .sk-selection-table-table .sk-selection-table-attr .sk-attr .sk-field input[type="checkbox"]:checked + label:before {
+  content: "\f058";
+}
+
+.sk-desktop .sk-select span.ui-selectmenu-text {
+  min-height: 34px;
+  padding: 2px;
+}
+
+.sk-fieldset .sk-fieldset-item > .sk-uigroup-header {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.sk-uigroup .sk-uigroup-header {
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  color: var(--vd-green-dark-color);
+}
+
+.sk-stripe-payment .sk-fieldset {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.sk-stripe-payment .sk-fieldset .sk-fieldset-item {
+  position: relative;
+  background-color: transparent;
+  border: 2px solid var(--brand-primary-color);
+}
+
+.sk-stripe-payment .sk-fieldset .sk-fieldset-item:before {
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 30px);
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 6rem;
+  font-weight: 300;
+  display: inline-block;
+  content: "\f09d";
+  background-color: var(--reverse-color);
+  color: var(--brand-primary-color);
+}
+
+.sk-stripe-payment .sk-fieldset .sk-fieldset-item .sk-uigroup-header {
+  background-color: transparent;
+}
+
+.sk-stripe-payment .sk-fieldset .sk-fieldset-item .sk-stripe-info {
+  display: none;
+}
+
+.sk-navigation {
+  text-align: center;
+}
+
+.sk-navigation .sk-button-wrapper.sk-button-wrapper--action {
+  float: none;
+}
+
+.sk-navigation .sk-button-wrapper.sk-button-wrapper--action .sk-button {
+  background-color: var(--reverse-font-color);
+  border: 2px solid var(--brand-primary-color);
+  color: var(--brand-primary-color);
+}
+
+.sk-navigation .sk-button-wrapper.sk-button-wrapper--action .sk-button i, .sk-navigation .sk-button-wrapper.sk-button-wrapper--action .sk-button span {
+  color: var(--brand-primary-color);
+}
+
+.sk-navigation .sk-button {
+  border-radius: 50px;
+  padding: 12px 80px;
+}
+
+/******************************************************************************************* PROGRESS BAR */
+/**********************************************************************************************************/
+.sk-progress-bar {
+  min-height: auto;
+  padding: 0 20px;
+}
+
+.sk-progress-bar.sk-progress-bar--fixed {
+  background-color: #FFF;
+}
+
+.sk-progress-bar .sk-progress-bar-step {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 25px 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.sk-progress-bar .sk-progress-bar-step:before {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  content: '';
+  width: calc(50% - 10px);
+  height: 2px;
+  background: var(--dark-gray);
+}
+
+.sk-progress-bar .sk-progress-bar-step:after {
+  position: absolute;
+  bottom: 9px;
+  right: 0;
+  content: '';
+  width: calc(50% - 10px);
+  height: 2px;
+  background: var(--dark-gray);
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--completed, .sk-progress-bar .sk-progress-bar-step.sk-step--active {
+  background-color: transparent;
+  text-align: center;
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--completed .sk-header:after, .sk-progress-bar .sk-progress-bar-step.sk-step--active .sk-header:after {
+  color: var(--brand-primary-color);
+  content: "\f192";
+  left: calc(50% - 10px);
+  font-size: 1.9rem;
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--active:before {
+  background: var(--brand-primary-color);
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--active .sk-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--completed:before {
+  background: var(--brand-primary-color);
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--completed:after {
+  background: var(--brand-primary-color);
+}
+
+.sk-progress-bar .sk-progress-bar-step.sk-step--active.sk-step--completed:after {
+  background: var(--dark-gray);
+}
+
+.sk-progress-bar .sk-progress-bar-step:first-child:before {
+  display: none;
+}
+
+.sk-progress-bar .sk-progress-bar-step:last-child:after {
+  display: none;
+}
+
+.sk-progress-bar .sk-progress-bar-step .sk-header {
+  padding-left: 0;
+}
+
+.sk-progress-bar .sk-progress-bar-step .sk-header:after {
+  position: absolute;
+  bottom: 18px;
+  height: 2px;
+  color: var(--dark-gray);
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f111";
+  left: calc(50% - 5px);
+  font-size: 1.2rem;
+}
+
+.sk-progress-bar .sk-progress-bar-step .sk-number {
+  display: none !important;
+}
+
+.sk-progress-bar .sk-progress-bar-step .sk-header--not-subtitled .sk-title {
+  font-style: normal;
+}
+
+#sk-fieldset-item-CreateMotorInsuranceProcessPaymentUIDef-Payment-Stripe .sk-uigroup-header {
+  padding: 30px 30px 30px 30px;
+  padding-bottom: 10px;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  color: var(--vd-green-dark-color);
+}
+
+#sk-MotorInsurance-Agent-AgentPicture .sk-message-content {
+  background-image: url(/resources/definition/generic/Resource/en/us/vaudoise_watermark.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+#sk-MotorInsurance-Agent-AgentPicture table tr td {
+  padding: 20px;
+}
+
+#sk-MotorInsurance-Agent-AgentPicture table tr td img {
+  height: 208px;
+}
+
+#sk-MotorInsurance-Agent-AgentPicture table tr td span {
+  display: block;
+  padding-bottom: 5px;
+}
+
+#sk-MotorInsurance-Agent-AgentPicture table tr td b {
+  display: block;
+  font-weight: bold;
+}
+
+#sk-MotorInsurance-Agent-AgentPicture table tr td b:first-child {
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 12px;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage {
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content {
+  padding: 40px;
+  border: 1px solid var(--brand-primary-color);
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content h3 {
+  padding-bottom: 30px;
+  color: var(--vd-green-dark-color);
+  text-align: center;
+  font-size: 5rem;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content table {
+  width: 100%;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content table tr td {
+  width: 50%;
+  padding: 5px;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content table tr td:first-child {
+  text-align: right;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content table tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage .sk-message-content table tr:nth-child(4) td:first-child {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+#sk-MotorInsurance-CompletionMessages-ConfirmationMessage .sk-message-content {
+  padding: 55px;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage {
+  width: 100%;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-message-content {
+  background-color: transparent;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage p {
+  padding-bottom: 10px;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack > div  {
+  background-color: transparent;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type {
+  text-align: center;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type.sk-type--1 .progress-radial {
+  --percentage-wheel-outer-bg-color: green;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type.sk-type--2 .progress-radial {
+  --percentage-wheel-outer-bg-color: #e0ba5a;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type.sk-type--3 .progress-radial {
+  --percentage-wheel-outer-bg-color: red;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type h4 {
+  padding-bottom: 15px;
+  font-size: 1.6rem;
+  color: var(--brand-primary-color);
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type .progress-radial {
+  float: none;
+  margin: 0 auto;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-stack .sk-type p {
+  font-size: 1.4rem;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage a i {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 600;
+  color: var(--brand-primary-color);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--brand-primary-passive-color);
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage a:hover i {
+  color: var(--brand-primary-passive-color);
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage .sk-download {
+  margin-bottom: 50px;
+  padding: 25px;
+  background: #f5f5f5;
+  border-bottom: 1px solid var(--brand-primary-color);
+  text-align: center;
+}
+
+body.sk--pub,
+.sk--pub .sk-main {
+  background-color: var(--allianz-blue-color) !important;
+}
+
+body.sk--pub .sk-progress-bar,
+.sk--pub .sk-main .sk-progress-bar {
+  display: none;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess header {
+  display: none;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-uigroup-header {
+  text-align: center;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-option-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sk-AllianzProperty-Product-ProductSelector i {
+  font-size: 8rem;
+  margin-top: 25px;
+}
+
+#sk-AllianzProperty-Product-ProductSelector .sk-option-item {
+  height: 200px;
+  width: 200px;
+}
+
+#sk-AllianzProperty-CompletionBarMessage .sk-message.sk-message--default .sk-message-content {
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.sk-attr.sk-option--button .sk-option-item input + label {
+  border-radius: 10px;
+}
+
+.sk-attr.sk-option--button .sk-option-item input:checked + label, .sk-attr.sk-option--graphical .sk-option-item input:checked + label {
+  color: var(--allianz-blue-color);
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-slider-bar {
+  background-color: var(--allianz-white-color);
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-slider-bar .sk-slider-handle {
+  border-radius: 50px;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-message .sk-message-content {
+  color: #4A4A4A;
+  border-radius: 20px;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess .sk-attr.sk-attr--focussed .sk-input {
+  border-color: var(--allianz-white-color) !important;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess #sk-AllianzProperty-Success-SuccessMessage {
+  text-align: center;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess #sk-AllianzProperty-Success-SuccessMessage .sk-message-content {
+  background-color: var(--allianz-blue-color) !important;
+}
+
+.sk-app--CreateAllianzyPropertyQuoteProcess #sk-AllianzProperty-Success-SuccessMessage i {
+  font-size: 15rem;
+  color: #F9CE41;
+}
+
+#sk-AllianzProperty-PropertyQuestions-OccupancyStatus,
+#sk-AllianzProperty-PropertyQuestions-PropertyType {
+  text-align: center;
+}
+
+#sk-AllianzProperty-PropertyQuestions-OccupancyStatus .sk-label label,
+#sk-AllianzProperty-PropertyQuestions-PropertyType .sk-label label {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+#sk-AllianzProperty-Cover-CoverMessage h2,
+#sk-AllianzProperty-Cover-CoverMessage h3,
+#sk-AllianzProperty-Cover-CoverMessage h4 {
+  color: #4A4A4A;
+}
+
+#sk-AllianzProperty-Cover-coverMessage2 {
+  padding: 25px;
+}
+
+#sk-AllianzProperty-Cover-coverMessage2 h3 {
+  color: #4A4A4A;
+  float: left;
+}
+
+#sk-AllianzProperty-Cover-coverMessage2 h3 + span {
+  float: right;
+  font-size: 3rem;
+  padding-top: 8px;
+}
+/*# sourceMappingURL=allianz.css.map */

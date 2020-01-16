@@ -1,0 +1,133 @@
+.sk-attr {
+    .sk-field {
+        .sk-input{
+            padding-left: 10px;
+            border-radius: 2px;
+        }
+
+        .sk-input-icon{
+            top: 9px;
+            left: 8px;
+
+            &.sk-resource-download{
+                left: 28px;
+            }
+
+            &.sk-resource-delete {
+                left: 52px;
+            }
+        }
+    }
+
+    &.sk-attr--loading>.sk-field:before{
+        top: 8px;
+        right: 8px;
+    }
+
+    .sk-selection-table-table {
+        table {
+            background: rgba(245, 245, 245, 0.51);
+
+            th, td{
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            thead th.cell--header{
+                button{
+                    background-color: var(--brand-primary-color);
+                    border: 0;
+                    color: #FFF;
+                    padding: 10px 25px;
+                }
+            }
+        }
+
+        .sk-selection-table-attr .sk-attr .sk-field{
+            min-height: 0;
+
+            input[type="checkbox"]+label:before{
+                content: "\f111";
+            }
+
+            input[type="checkbox"]:checked+label:before{
+                content: "\f058";
+            }
+        }
+    }
+}
+
+.sk-desktop .sk-select span.ui-selectmenu-text{
+    min-height: 34px;
+    padding: 2px;
+}
+
+.sk-fieldset .sk-fieldset-item>.sk-uigroup-header{
+    padding-bottom: 10px;
+}
+
+.sk-uigroup .sk-uigroup-header {
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: var(--brand-dark-color);
+}
+
+.sk-stripe-payment{
+    .sk-fieldset {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        .sk-fieldset-item{
+            position: relative;
+            background-color: transparent;
+            border: 2px solid var(--brand-primary-color);
+
+            &:before{
+                position: absolute;
+                top: -12px;
+                left: calc(50% - 30px);
+                font-family: 'Font Awesome 5 Pro';
+                font-size: 6rem;
+                font-weight: 300;
+                display: inline-block;
+                content: "\f09d";
+                background-color: var(--reverse-color);
+                color: var(--brand-primary-color);
+            }
+
+            .sk-uigroup-header{
+                background-color: transparent;
+            }
+
+            .sk-stripe-info{
+                display: none;
+            }
+        }
+    }
+}
+
+.sk-navigation {
+    text-align: center;
+
+    .sk-button-wrapper.sk-button-wrapper--action{
+        float: none;
+
+        .sk-button{
+            background-color: var(--reverse-font-color);
+            border: 2px solid var(--brand-primary-color);
+            color: var(--brand-primary-color);
+
+            i, span{
+                color: var(--brand-primary-color);
+            }
+        }
+    }
+
+    .sk-button{
+        border-radius: 2px;
+    }
+}
+

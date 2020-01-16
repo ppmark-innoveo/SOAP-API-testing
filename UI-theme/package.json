@@ -1,0 +1,30 @@
+{
+  "name": "Vaudoise",
+  "version": "1.0.0",
+  "description": "UI POC for Vaudoise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Innoveo/Vaudoise.git"
+  },
+  "keywords": [
+    "Vaudoise",
+    "skye",
+    "ui"
+  ],
+  "author": "Innoveo AG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Innoveo/Vaudoise/issues"
+  },
+  "homepage": "https://github.com/Innoveo/Vaudoise#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

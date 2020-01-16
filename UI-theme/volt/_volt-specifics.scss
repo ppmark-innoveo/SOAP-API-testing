@@ -1,0 +1,549 @@
+#sk-IndividualCyber-Messages-assessmentMessage {
+  h3 {
+    color: var(--light-blue-color);
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 8rem;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: #{$breakpoint-mobile}px) {
+    h3 {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+  }
+
+  @media (max-width: 369px) {
+    h3 {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+}
+
+#sk-IndividualCyber-Product-question5 {
+  &.sk-attr .sk-option-list .sk-option-item input + label {
+    &:before {
+      display: none;
+    }
+
+    span {
+      font-size: 2.3rem;
+      text-align: center;
+    }
+  }
+}
+
+#sk-IndividualCyber-Messages-riskMeterMessage {
+  h4,
+  h3 {
+    color: var(--light-blue-color);
+    text-align: center;
+  }
+
+  .progress-radial {
+    float: none;
+    margin: 20px auto;
+  }
+}
+
+#sk-IndividualCyber-Product-planTable {
+  .sk-label label {
+    color: var(--light-blue-color);
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 8rem;
+    text-transform: uppercase;
+  }
+
+  .sk-table-table > ul {
+    border: 0;
+
+    > li {
+      border: 0;
+      text-align: center;
+      color: #92969a;
+
+      &:nth-child(2n) {
+        background-color: #272f36;
+        border-radius: 5px;
+      }
+
+      i {
+        &.fa-times-circle {
+          color: #b94a48;
+        }
+
+        &.fa-check-circle {
+          color: green;
+        }
+      }
+
+      b {
+        display: block;
+        padding-top: 5px;
+        color: white;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+      }
+
+      .sk-attr .sk-option-list {
+        justify-content: center;
+
+        .sk-option-item {
+          margin-right: 0;
+        }
+
+        label {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+#sk-IndividualCyber-Messages-riskMeterMessagePlanSelectionMessage {
+  .sk-message-content {
+    //background-color: var(--main-grey-color);
+
+    .progress-radial {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+}
+
+#IndividualCyberCreateQuoteProcessPersonalDataUIDefinition {
+  .sk-label label {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: none;
+  }
+}
+
+#sk-IndividualCyber-Messages-paymentMessage {
+  text-align: center;
+  div {
+    padding: 20px 0;
+  }
+
+  h3 {
+    color: var(--light-blue-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 100;
+    color: white;
+  }
+
+  h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+}
+
+#sk-IndividualCyber-Messages-policyIssuedMessage,
+#sk-IndividualCyber-Messages-assessmentCompletedMessage {
+  text-align: center;
+
+  h3 {
+    color: var(--light-blue-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: #{$breakpoint-mobile}px) {
+    h3 {
+      font-size: 4.5rem;
+    }
+  }
+
+  i {
+    color: green;
+    font-size: 6rem;
+  }
+
+  h4 {
+    font-weight: 200;
+    margin: 20px;
+  }
+}
+
+#sk-IndividualCyber-Messages-downloadQuoteButtonMessage {
+  text-align: center;
+
+  button {
+    a {
+      color: var(--dark-bg-color);
+      text-decoration: none;
+    }
+  }
+}
+#sk-IndividualCyber-Messages-summaryMessage {
+  text-align: center;
+
+  hr {
+    border: 1px solid #eee;
+    border-bottom: 0;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .sk-message-content div {
+    padding: 15px 0;
+  }
+
+  h3 {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 100;
+    color: white;
+  }
+
+  h4 {
+    text-transform: uppercase;
+  }
+}
+
+#sk-Shoppingcart-cyberGenericHiddenPayment {
+  min-width: 400px;
+  margin: 0 auto;
+
+  @media (max-width: #{$breakpoint-mobile}px) {
+    min-width: unset !important;
+    padding: 0;
+  }
+
+  > .sk-fieldset {
+    padding: 0;
+  }
+
+  .sk-label label {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: none;
+  }
+
+  #sk-payment-amount-wp {
+    display: none;
+  }
+}
+
+// RADIAL OUTLINE REMOVED
+
+.progress-radial {
+  border: none !important;
+}
+
+.visa.sk-selected,
+.mastercard.sk-selected {
+  border: 1px solid var(--light-blue-color) !important;
+  border-radius: 5px !important;
+  margin-right: 5px;
+
+  img {
+    border: none !important;
+    padding-top: 3.5px;
+  }
+}
+
+@media (max-width: 700px) {
+  ul.sk-nav-zones {
+    top: 100px !important;
+    display: flex !important;
+    transform: scale(1) !important;
+    margin-right: 3%;
+  }
+}
+
+.sk-datatable-records {
+  display: none !important;
+}
+
+.ReactTable .pagination-bottom {
+  display: none;
+}
+
+.overlay {
+  margin-left: 21.5px !important;
+  margin-top: 21.5px !important;
+}
+
+//Benefit information
+#sk-IndividualCyber-Messages-showInfo {
+  &.sk-attr {
+    padding-bottom: unset !important;
+
+    .sk-field {
+      color: var(--dark-bg-color);
+      padding-bottom: unset;
+    }
+  }
+
+  .sk-option-list .sk-option-item {
+    width: 100% !important;
+
+    input {
+      + label {
+        width: 100% !important;
+        max-width: unset !important;
+        min-height: 55px;
+        background-color: var(--main-grey-color) !important;
+
+        > span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            font-size: 28px;
+            margin-left: -90px;
+          }
+
+          > span {
+            color: var(--dark-bg-color);
+            font-size: 1.7rem;
+            font-weight: 400;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#sk-IndividualCyber-Messages-benefitsInfoMessage {
+
+  a {
+    color: var(--purple-dark-color);
+    font-weight: bold;
+  }
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  .sk-attr {
+    padding-top: unset;
+  }
+
+  .sk-message-content {
+    transform: translate(0, -15px);
+    background-color: var(--main-grey-color);
+    color: var(--dark-bg-color);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+//Product selectors
+
+#IndividualCyber-Product-ProductSelectorComponent {
+  a {
+    color: var(--primary-font-color);
+  }
+}
+
+#sk-process-IndividualCyberCreateQuoteProcess {
+  .sk-process .sk-core {
+    padding-top: none;
+  }
+
+  #sk-IndividualCyber-Messages-dashboardMessage {
+    font-size: 2rem;
+    line-height: 2rem;
+
+    h2 {
+      color: var(--light-blue-color);
+    }
+  }
+}
+
+#sk-IndividualCyber-Messages-enterIvoltMessage {
+  .sk-message-content {
+    width: 120%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: var(--light-blue-color) !important;
+    text-transform: uppercase;
+  }
+}
+
+//Dashboard Primary Selectors
+
+#sk-IndividualCyber-Dashboard-cyberAssessmentSelectorMessage,
+#sk-IndividualCyber-Dashboard-otherProductSelectorMessage {
+
+@media (max-width: 369px) {
+  &.sk-attr {
+    padding: 10px;
+  }
+}
+  
+  .primary-selector,
+  .secondary-selector {
+    display: flex;
+  
+  a:first-of-type {
+    margin-right: 10px;
+  }
+
+  a {
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--primary-font-color);
+      font-weight: 600;
+      display: block;
+      width: 100%;
+      padding: 30px 10px 40px 10px;
+      background-color: var(--purple-dark-color);
+      border-radius: 5px;
+
+      i {
+        position: absolute;
+        top: 10px;
+        left: 105px;
+      }
+
+      .fas {
+        color: var(--light-blue-color);
+        font-weight: 600;
+      }
+
+      .far {
+        color: var(--light-blue-color);
+      }
+
+      span:nth-of-type(2) {
+        position: absolute;
+        top: 80px;
+        left: 9px;
+        color: var(--light-blue-color);
+        font-weight: 100;
+      }
+
+    }
+
+  }
+
+  .primary-selector {
+    div {
+      width: 80%;
+    }
+  }
+}
+
+#sk-IndividualCyber-Dashboard-otherProductSelectorMessage {
+  .secondary-selector {
+    a {
+      margin-right: 10px !important;
+
+    i {
+      left: 57px !important;
+    }
+     
+    }
+  }
+}
+
+//Autosearch
+
+.sk-autosearch {
+  background-color: var(--main-grey-color);
+  color: var(--purple-dark-color);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  transform: translate(0px, -15px);
+}
+
+.sk-comp-title,
+.react-tabs > ul > li.react-tabs__tab--selected {
+  background-color: var(--main-grey-color);
+  color: var(--purple-dark-color) !important;
+}
+
+.header.clearfix {
+  display: none !important;
+}
+
+
+//Dashboard Panel
+#sk-panel-content-IndividualCyberCreateQuoteProcessDashboardUIDefinition-FieldsetGroup-Fieldset1-PanelGroup1-AutoSearch,
+#sk-panel-content-IndividualCyberCreateQuoteProcessDashboardUIDefinition-FieldsetGroup-Fieldset1-PanelGroup1-Wallet {
+
+  &.sk-uigroup-content {
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .skeleton {
+    display: none;
+  }
+
+}
+
+#sk-panel-item-IndividualCyberCreateQuoteProcessDashboardUIDefinition-FieldsetGroup-Fieldset1-PanelGroup1-Wallet{
+
+  display: none;
+
+ /* &.sk-panel--expanded>.sk-uigroup-header,
+  .sk-panel .sk-panel-header {
+  background-color: var(--main-grey-color);
+  border-radius: 5px 5px 0 0;
+}
+
+.sk-panel-header {
+  border: none;
+} */
+}
+
+.sk-panel .sk-panel-item>.sk-uigroup-header {
+  background-color: var(--main-grey-color);
+  border-radius: 5px;
+  padding-bottom: 10px;
+
+  &:before {
+    padding-bottom: 10px;
+    padding-left: 7px;
+  }
+}
+
+.sk-panel .sk-panel-header {
+  border: none;
+}
+
+#IndividualCyber-Product-AutoSearchComponent {
+  .sk-comp-title,
+  .sk-columns-selector {
+    display: none;
+  }
+  
+}
+
+
+  .sk-process .sk-core {
+    padding-top: 0 !important;
+  }
+
+
+
+

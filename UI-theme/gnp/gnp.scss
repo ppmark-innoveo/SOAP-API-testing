@@ -1,0 +1,427 @@
+:root{
+    --main-color: #183d7b;
+    --main-font-color: #333;
+
+    --brand-primary-color: var(--main-color);
+    --primary-font-color: var(--main-font-color);
+    --link-color: var(--main-color);
+    --input-border-width: 1px;
+    --attr-padding: 10px;
+    --attr-min-height: auto;
+    --input-font-size: 1.4rem;
+    --input-font-weight: 400;
+
+    --fifth-grey-color: #bbb;
+
+    --message-default-bg-color: transparent;
+
+    --option-button-selected-icon-color: #ff6f20;
+    --option-button-icon-color: #ff6f20;
+    --option-button-focused-border-color: #ff6f20;
+    --button-bg-color: #ff6f20;
+}
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:600i&display=swap";
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.sk-toolbar,
+.sk-nav,
+.sk-progress-bar{
+    display: none;
+}
+.sk-app,
+.sk-page,
+.sk-main{
+    min-height: 100%;
+}
+.sk-page{
+    position: initial;
+}
+.sk--pub .sk-main{
+    padding-left: 210px;
+    padding-right: 20px;
+}
+
+.header {
+    padding: 10px;
+    border: 3px solid var(--brand-primary-color);
+    margin: 2px;
+
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img:nth-child(1){
+            height: 22px;
+        }
+        img:nth-child(3){
+            height: 56px;
+        }
+
+        a{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: 'Open Sans';
+        }
+
+        .menu{
+            position: absolute;
+            top: 90px;
+            bottom: 5px;
+            left: 2px;
+            border: 3px solid var(--brand-primary-color);
+            padding: 100px 10px 10px 10px;
+            width: 192px;
+            background: #ddd;
+
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                padding: 10px 0;
+                font-size: 1.4rem;
+                font-style: normal;
+                text-decoration: none;
+                font-family: arial;
+                font-weight: 100;
+                line-height: 1.4rem;
+
+
+                span{
+
+                    &:nth-child(1){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                        padding: 5px;
+                        background: #FFF;
+                        border: 1px solid var(--brand-primary-color);
+                        border-radius: 50%;
+                    }
+
+                    i{
+                        width: 40px;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sk-process .sk-core{
+    padding-top: 30px !important;
+}
+
+.sk-fieldset {
+    .sk-fieldset-item{
+        > .sk-uigroup-header{
+            display: inline;
+            margin-left: 15px;
+            padding: 5px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            background: #FFF;
+        }
+
+        .sk-fieldset-content{
+            margin-top: -15px;
+            padding-top: 20px;
+            padding-bottom: 0;
+            border: 1px solid var(--input-border-color);
+        }
+    }
+}
+
+
+.sk-attr{
+    flex-direction: row;
+
+    .sk-label{
+        width: 25%;
+        padding: 5px 10px 0 0;
+        text-align: right;
+    }
+    .sk-field{
+        width: 75%;
+
+        .sk-column-list[data-column-count='1']>.sk-column &{
+            width: 100%;
+        }
+
+        .sk-input{
+            padding-left: 5px;
+            border-radius: 2px;
+        }
+
+        .sk-input-icon{
+            top: 8px;
+            left: 8px;
+            font-size: 1.3rem;
+        }
+
+        .sk-option-item{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        input[type="radio"]:checked+label:before{
+            content: "\f192";
+        }
+    }
+
+    &.sk-attr--read{
+        .sk-field{
+            padding-top: 5px;
+        }
+    }
+
+    &.sk-attr--disabled{
+        opacity: 1;
+
+        .sk-field{
+            .sk-input{
+                background: #ddd;
+            }
+        }
+    }
+
+    .sk-desktop select.sk-select:disabled+.sk-select,
+    .sk-desktop select.page-select:disabled+.sk-select{
+        opacity: 1;
+    }
+
+    &.sk-message{
+        font-size: 1.4rem;
+
+        &.sk-message--default .sk-message-content{
+            padding: 0;
+        }
+    }
+
+    &.sk-table {
+        .sk-label{
+            width: 100%;
+            text-align: left;
+        }
+
+        .sk-table-table ul{
+            background: #ddd;
+
+            .cell{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.sk-button{
+    min-height: auto;
+    padding: 8px 12px;
+
+    span{
+        font-size: 1.4rem;
+    }
+}
+
+//UI GROUP
+#sk-fieldset-GNPSearchProcessSearchUIDefinition-FieldsetGroup1{
+    display: flex;
+    flex-wrap: wrap;
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-Identification{
+    width: 100%;
+
+    .sk-uigroup-header{
+        color: var(--main-color);
+    }
+
+    .sk-fieldset-content{
+        border: 1px solid var(--main-color);
+    }
+
+    #sk-GNPSearch-Messages-IdentificacionMessage{
+        .sk-message-content{
+            display: flex;
+            flex-wrap: nowrap;
+
+            div:first-child{
+                width: calc(100% - 260px);
+            }
+
+            div:nth-child(2){
+                width: 260px;
+                text-align: center;
+            }
+
+            a{
+                padding: 0 10px;
+            }
+
+            a:nth-child(1){
+                i{
+                    color: green;
+                }
+            }
+            a:nth-child(2){
+                i{
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-Clasification{
+    width: calc(100% - 150px);
+
+    .sk-fieldset-content{
+        min-height: 80px;
+    }
+
+    input[type="checkbox"]+label,
+    input[type="radio"]+label{
+        color: var(--main-color);
+    }
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-Observaciones{
+    width: 140px;
+    margin-left: 10px;
+    text-align: center;
+
+    .sk-fieldset-content{
+        min-height: 80px;
+    }
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-Search,
+#sk-basic-item-GNPSearchProcessShowUIDefinition-NoStyleGroup1-Search{
+    width: 100%;
+
+    .sk-uigroup-content{
+        position: relative;
+        padding-right: 100px;
+        margin: 0;
+        border: 0;
+
+        .sk-attr{
+            .sk-label{
+                color: var(--main-color);
+            }
+        }
+
+        &#sk-basic-content-GNPSearchProcessShowUIDefinition-NoStyleGroup1-Search{
+            .sk-navigation{
+                top: 10px;
+            }
+        }
+
+        .sk-navigation{
+            position: absolute;
+            top: 30px;
+            right: 15px;
+
+            margin: 0;
+
+            .sk-button{
+                min-width: auto;
+                padding: 0;
+                text-decoration: underline;
+                font-size: 1.4rem;
+                font-weight: 400;
+                background: transparent;
+                color: var(--main-color);
+
+                i,
+                span {
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-ErrorMessage{
+    width: 100%;
+    margin: 10px 0;
+
+    .sk-fieldset-content{
+        border: 0;
+    }
+}
+//UI GROUP ITEM
+#sk-fieldset-item-GNPSearchProcessSearchUIDefinition-FieldsetGroup1-MoreInformation{
+    .sk-uigroup-header{
+        background: var(--main-color);
+        display: block;
+        color: #FFF;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .sk-fieldset-content{
+        border-color: var(--main-color);
+    }
+
+    .sk-attr{
+        width: auto;
+        min-width: 33%;
+
+        &#sk-GNPSearch-CaseInformation-SupportingAttributes-PolicyType{
+            min-width: 461px;
+        }
+    }
+}
+
+//UI GROUP ITEM
+#sk-basic-content-GNPSearchProcessShowUIDefinition-NoStyleGroup1-CaseInformation{
+    .sk-attr{
+        width: 33%;
+    }
+}
+
+#sk-GNPSearch-Messages-AlertaMessage{
+    .sk-message-content{
+        display: flex;
+        flex-wrap: nowrap;
+
+        > div{
+            width: 33%;
+
+            &:nth-child(3){
+                display: flex;
+
+                div{
+                    margin: 0 10px;
+                    padding: 5px;
+                    border: 1px solid #bbb;
+                    background: #DDD;
+                    text-align: center;
+                    
+                    span{
+                        display: block;
+                    }
+
+                    i{
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}
+

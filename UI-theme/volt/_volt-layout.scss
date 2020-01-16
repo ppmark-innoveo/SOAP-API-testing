@@ -1,0 +1,21 @@
+i.sk-back-top{
+    color: var(--light-blue-color);
+}
+
+.sk-nav{
+    .sk-nav-logo{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .sk-nav-zones[data-zones-count="1"]{
+        display: none;
+    }
+
+    .sk-nav-mobile-menu{
+        display: none;
+    }
+}

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="7.22.0.46">
+  <Definitions>
+    <Definition Filename="Definitions\Application\Application.zip" />
+    <Definition Filename="Definitions\Authorization\DefaultAuthorizationModel.zip" />
+    <Definition Filename="Definitions\Htmlcomponent\HeaderHTMLComponent.zip" />
+    <Definition Filename="Definitions\Htmlcomponent\MyZoneHTMLComponent.zip" />
+    <Definition Filename="Definitions\Htmlcomponent\NewsZoneHTMLComponent.zip" />
+    <Definition Filename="Definitions\Modelselectorcomponent\HorizontalProductSelectorComponent.zip" />
+    <Definition Filename="Definitions\Modelselectorcomponent\VerticalProductSelectorComponent.zip" />
+    <Definition Filename="Definitions\Process\SOAP10Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP1Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP2Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP3Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP4Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP5Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP6Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP7Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP8Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP9Process.zip" />
+    <Definition Filename="Definitions\Productcategorization\ProductCategorization.zip" />
+    <Definition Filename="Definitions\Product\SOAP1.zip" />
+    <Definition Filename="Definitions\Product\SOAP10.zip" />
+    <Definition Filename="Definitions\Product\SOAP2.zip" />
+    <Definition Filename="Definitions\Product\SOAP3.zip" />
+    <Definition Filename="Definitions\Product\SOAP4.zip" />
+    <Definition Filename="Definitions\Product\SOAP5.zip" />
+    <Definition Filename="Definitions\Product\SOAP6.zip" />
+    <Definition Filename="Definitions\Product\SOAP7.zip" />
+    <Definition Filename="Definitions\Product\SOAP8.zip" />
+    <Definition Filename="Definitions\Product\SOAP9.zip" />
+    <Definition Filename="Definitions\Search\FreeTextSearch.zip" />
+    <Definition Filename="Definitions\Search\ReferralSearch.zip" />
+    <Definition Filename="Definitions\Shoppingcartitem\ShoppingcartItem.zip" />
+    <Definition Filename="Definitions\Shoppingcart\Shoppingcart.zip" />
+    <Definition Filename="Definitions\Uidefinition\MyZoneUIDefinition.zip" />
+    <Definition Filename="Definitions\Uidefinition\SOAP3ProcessStep1UIDefinition.zip" />
+    <Definition Filename="Definitions\Zonedefinition\ZoneDefinition.zip" />
+    <Definition Filename="Definitions\Zonedefinition\ZonePublicDefinition.zip" />
+  </Definitions>
+</Project>

@@ -1,0 +1,44 @@
+:root{
+    --dark-bg-color: #1e292c;
+    --dark-font-color: #e0e6e9;
+    --purple-dark-color: #353a50;
+    --light-blue-color: #00ffff;
+    --main-grey-color: #e0e6e9;
+
+    --brand-primary-color: var(--dark-bg-color);
+    --primary-font-color: var(--main-grey-color);
+    --reverse-color: var(--dark-bg-color);
+    --toolbar-public-bg-color: var(--dark-bg-color);
+    --nav-bg-color: var(--dark-bg-color);
+
+    --message-default-bg-color: transparent;
+    --message-link-color: var(--light-blue-color);
+
+    --input-border-width: 1px;
+    --input-bg-color: white;
+    --input-border-color: white;
+
+    --label-font-size: 3rem;
+    --label-font-weight: 600;
+
+    --option-button-border-color: var(--purple-dark-color);
+    --option-button-selected-bg-color: var(--light-blue-color);
+    --option-button-selected-font-color: var(--dark-bg-color);
+
+    --button-bg-color: var(--light-blue-color);
+    --button-font-color: var(--dark-bg-color);
+    --button-border-width: 1px;
+    --button-border-color: var(--light-blue-color);
+
+    --percentage-wheel-outer-border-color: var(--main-grey-color);
+    --percentage-wheel-outer-bg-color: var(--light-blue-color);
+    --percentage-wheel-font-color: var(--light-blue-color);
+    //original color: --percentage-wheel-outer-border-color: #272f36;
+
+    --panel-header-font-color: var(--dark-bg-color);
+    --panel-header-bg-color: var(--main-grey-color);
+}
+
+//MEDIA BREAKPOINTS
+
+$breakpoint-mobile: 480;

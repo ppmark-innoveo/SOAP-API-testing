@@ -1,0 +1,194 @@
+#sk-fieldset-item-CreateMotorInsuranceProcessPaymentUIDef-Payment-Stripe {
+    .sk-uigroup-header {
+        padding: 30px 30px 30px 30px;
+        padding-bottom: 10px;
+        font-weight: 100;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-weight: bold;
+        color: var(--vd-green-dark-color);
+    }
+}
+
+#sk-MotorInsurance-Agent-AgentPicture {
+    .sk-message-content{
+        background-image: url(/resources/definition/generic/Resource/en/us/vaudoise_watermark.png);
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+
+    table {
+        tr {
+            td {
+                padding: 20px;
+
+                img{
+                    height: 208px;
+                }
+
+                span{
+                    display: block;
+                    padding-bottom: 5px;
+                }
+
+                b {
+                    display: block;
+                    font-weight: bold;
+
+                    &:first-child{
+                        font-size: 3rem;
+                        line-height: 3rem;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#sk-MotorInsurance-Products-PaymentSummaryMessage {
+    width: 100%;
+    margin: 20px auto 0 auto;
+
+    .sk-message-content {
+        padding: 40px;
+        border: 1px solid var(--brand-primary-color);
+
+        h3 {
+            padding-bottom: 30px;
+            color: var(--vd-green-dark-color);
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        table {
+            width: 100%;
+
+            tr{
+                td {
+                    width: 50%;
+                    padding: 5px;
+
+                    &:first-child {
+                        text-align: right;
+                    }
+
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+
+                &:nth-child(4){
+                    td:first-child{
+                        width: 100%;
+                        text-align: center;
+                        padding-top: 20px;
+                        font-size: 2rem;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+#sk-MotorInsurance-CompletionMessages-ConfirmationMessage {
+    .sk-message-content {
+        padding: 55px;
+    }
+}
+
+#sk-MotorInsurance-CompletionMessages-TermsAndConditions-TermsAndConditionsMessage {
+    width: 100%;
+
+    .sk-message-content {
+        background-color: transparent;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+
+    .sk-stack {
+        > div  {
+            background-color: transparent;
+        }
+
+        .sk-type {
+            text-align: center;
+
+            &.sk-type--1 {
+                .progress-radial {
+                    --percentage-wheel-outer-bg-color: green;
+                }
+            }
+
+            &.sk-type--2 {
+                .progress-radial {
+                    --percentage-wheel-outer-bg-color: #e0ba5a;
+                }
+            }
+
+            &.sk-type--3 {
+                .progress-radial {
+                    --percentage-wheel-outer-bg-color: red;
+                }
+            }
+
+            h4 {
+                padding-bottom: 15px;
+                font-size: 1.6rem;
+                color: var(--brand-primary-color);
+            }
+
+            .progress-radial {
+                float: none;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 1.4rem;
+                padding: 10px 0;
+                font-weight: 400;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background-color: transparent;
+
+        i {
+            display: block;
+            padding-bottom: 10px;
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 600;
+            color: var(--brand-primary-color);
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--brand-primary-passive-color);
+
+            i {
+                color: var(--brand-primary-passive-color);
+            }
+        }
+    }
+
+    .sk-download {
+        margin-bottom: 50px;
+        padding: 25px;
+        background: #f5f5f5;
+        border-bottom: 1px solid var(--brand-primary-color);
+        text-align: center;
+    }
+}

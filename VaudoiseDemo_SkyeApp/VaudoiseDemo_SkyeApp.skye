@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="7.14.1.12">
+  <Definitions>
+    <Definition Filename="Definitions\Application\Application.zip" />
+    <Definition Filename="Definitions\Authorization\DefaultAuthorizationModel.zip" />
+    <Definition Filename="Definitions\Generic\Resource.zip" />
+    <Definition Filename="Definitions\Htmlcomponent\MyZoneHTMLComponent.zip" />
+    <Definition Filename="Definitions\Htmlcomponent\NewsZoneHTMLComponent.zip" />
+    <Definition Filename="Definitions\Modelselectorcomponent\HorizontalProductSelectorComponent.zip" />
+    <Definition Filename="Definitions\Modelselectorcomponent\VerticalProductSelectorComponent.zip" />
+    <Definition Filename="Definitions\Process\AdvisorMotorInsuranceProcess.zip" />
+    <Definition Filename="Definitions\Process\CreateMotorInsuranceProcess.zip" />
+    <Definition Filename="Definitions\Process\GNPCreateQuoteProcess.zip" />
+    <Definition Filename="Definitions\Productcategorization\ProductCategorization.zip" />
+    <Definition Filename="Definitions\Product\GNP.zip" />
+    <Definition Filename="Definitions\Product\MotorInsurance.zip" />
+    <Definition Filename="Definitions\Search\AdvisorAutomaticSearch.zip" />
+    <Definition Filename="Definitions\Search\FreeTextSearch.zip" />
+    <Definition Filename="Definitions\Search\ReferralSearch.zip" />
+    <Definition Filename="Definitions\Shoppingcartitem\ShoppingcartItem.zip" />
+    <Definition Filename="Definitions\Shoppingcart\Shoppingcart.zip" />
+    <Definition Filename="Definitions\Uidefinition\AdvisorMotorInsuranceProcessCustomerDetailsUIDefinition.zip" />
+    <Definition Filename="Definitions\Uidefinition\CreateMotorInsuranceProcessConfirmationUIDef.zip" />
+    <Definition Filename="Definitions\Uidefinition\CreateMotorInsuranceProcessContactAdvisorUIDefinition.zip" />
+    <Definition Filename="Definitions\Uidefinition\CreateMotorInsuranceProcessCustomerDetailsUIDefinition.zip" />
+    <Definition Filename="Definitions\Uidefinition\CreateMotorInsuranceProcessPaymentUIDef.zip" />
+    <Definition Filename="Definitions\Uidefinition\GNPCreateQuoteProcessCollectDataUIDefinition.zip" />
+    <Definition Filename="Definitions\Uidefinition\MyZoneUIDefinition.zip" />
+    <Definition Filename="Definitions\Zonedefinition\ZoneDefinition.zip" />
+    <Definition Filename="Definitions\Zonedefinition\ZonePublicDefinition.zip" />
+  </Definitions>
+</Project>
