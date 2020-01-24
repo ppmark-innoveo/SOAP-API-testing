@@ -16,6 +16,8 @@
     <Definition Filename="Definitions\Process\SOAP15Process.zip" />
     <Definition Filename="Definitions\Process\SOAP16Process.zip" />
     <Definition Filename="Definitions\Process\SOAP17Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP18Process.zip" />
+    <Definition Filename="Definitions\Process\SOAP19Process.zip" />
     <Definition Filename="Definitions\Process\SOAP1Process.zip" />
     <Definition Filename="Definitions\Process\SOAP2Process.zip" />
     <Definition Filename="Definitions\Process\SOAP3Process.zip" />
@@ -31,10 +33,15 @@
     <Definition Filename="Definitions\Product\SOAP11.zip" />
     <Definition Filename="Definitions\Product\SOAP12.zip" />
     <Definition Filename="Definitions\Product\SOAP13.zip" />
+    <Definition Filename="Definitions\Product\SOAP13v1.zip" />
     <Definition Filename="Definitions\Product\SOAP14.zip" />
+    <Definition Filename="Definitions\Product\SOAP14v1.zip" />
     <Definition Filename="Definitions\Product\SOAP15.zip" />
+    <Definition Filename="Definitions\Product\SOAP15v1.zip" />
     <Definition Filename="Definitions\Product\SOAP16.zip" />
     <Definition Filename="Definitions\Product\SOAP17.zip" />
+    <Definition Filename="Definitions\Product\SOAP18.zip" />
+    <Definition Filename="Definitions\Product\SOAP19.zip" />
     <Definition Filename="Definitions\Product\SOAP2.zip" />
     <Definition Filename="Definitions\Product\SOAP3.zip" />
     <Definition Filename="Definitions\Product\SOAP4.zip" />
